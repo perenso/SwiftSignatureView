@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol SwiftSignatureViewDelegate: AnyObject {
+@objc public protocol SwiftSignatureViewDelegate: AnyObject {
     func swiftSignatureViewDidDrawGesture(_ view: ISignatureView, _ tap: UIGestureRecognizer)
     func swiftSignatureViewDidDraw(_ view: ISignatureView)
 }

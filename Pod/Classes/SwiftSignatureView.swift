@@ -9,7 +9,7 @@
 import UIKit
 import PencilKit
 
-public protocol ISignatureView: AnyObject {
+@objc public protocol ISignatureView: AnyObject {
     var delegate: SwiftSignatureViewDelegate? { get set }
     var scale: CGFloat { get set }
     var maximumStrokeWidth: CGFloat { get set }
@@ -34,6 +34,7 @@ extension ISignatureView {
 }
 
 /// A lightweight, fast and customizable option for capturing fluid, variable-stroke-width signatures within your app.
+@objcMembers
 open class SwiftSignatureView: UIView, ISignatureView {
 
     private var viewReady: Bool = false
